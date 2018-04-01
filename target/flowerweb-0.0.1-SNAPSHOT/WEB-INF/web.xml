@@ -1,0 +1,20 @@
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>com.flowergarden.servlets.HelloWorldServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>getbouquets</servlet-name>
+		<servlet-class>com.flowergarden.servlets.GetBouquetsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>getbouquets</servlet-name>
+		<url-pattern>/getbouquets</url-pattern>
+	</servlet-mapping>
+</web-app>
